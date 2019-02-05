@@ -41,7 +41,7 @@ class ClientHandler implements Runnable
 
 				// breaking thre string into message and recipent part
 				// so, in this program the specific structure of messaging is to be followed
-				StringTokenizer str_tokenizer = new StringTokenizer(str_received, "#");
+				StringTokenizer str_tokenizer = new StringTokenizer(str_received, " ");
 				String str_msgtosend = str_tokenizer.nextToken();
 				String str_recipent = str_tokenizer.nextToken();
 
