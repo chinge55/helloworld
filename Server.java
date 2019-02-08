@@ -35,13 +35,13 @@ public class Server
 			ClientHandler clienthandler = new ClientHandler(s, "client"+i, datainputstream, dataoutputstream);
 
 			// create a new thread with the above object
-			Thread t = new Thread(clienthandler);
+	//			Thread t = new Thread(clienthandler);
 
 			System.out.println("Adding the client to active clients");
 			clienthandler_array.add(clienthandler);
 
 			// Start the thread
-			t.run();
+			clienthandler.run();
 
 			// increment for the new client
 			i++;
